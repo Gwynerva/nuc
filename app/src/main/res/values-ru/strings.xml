@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Нет Неизвестным Звонкам</string>
+    <string name="permissions_label">Права доступа:</string>
+    <string name="permission_calls">Вызовы</string>
+    <string name="permission_contacts">Контакты</string>
+    <string name="permission_notifications">Уведомления</string>
+    <string name="calls_skipped">%1$d звонков сброшено</string>
+    <string name="protection_active">Защита Активна</string>
+    <string name="protection_paused">Защита на Паузе</string>
+    <string name="protection_stopped">Защита Отключена</string>
+    <string name="activate_protection">Включить защиту</string>
+    <string name="pause_protection">Приостановить защиту</string>
+    <string name="stop_protection">Отключить защиту</string>
+    <string name="allow_repeated_calls">Разрешить перезвон</string>
+    <string name="on_pause_until">На паузе до %1$s</string>
+    <string name="tomorrow">завтра</string>
+    <string name="give_permissions">Предоставить Права</string>
+    <string name="two_hours">2 часа</string>
+    <string name="six_hours">6 часов</string>
+    <string name="until_tomorrow">До завтра</string>
+    <string name="call_catch_text">Предоставьте разрешение перехватывать звонки, чтобы приложение могло сбрасывать звонки с незнакомых номеров!</string>
+    <string name="call_catch_button">Сброс звонков</string>
+    <string name="contacts_text">Предоставьте доступ к контактам, чтобы приложение могло определять незнакомые номера!</string>
+    <string name="contacts_button">Чтение контактов</string>
+    <string name="notifications_text">Предоставьте разрешение на уведомления, чтобы видеть статус защиты и иметь возможность быстро поставить ее на паузу!</string>
+    <string name="notifications_button">Создание уведомлений</string>
+    <string name="repeated_calls_explain">Пропускать повторные звонки с того же неизвестного номера в течении 5 минут после отклоненного первого вызова.</string>
+</resources>

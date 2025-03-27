@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NoUnknownCall" parent="Theme.AppCompat.DayNight">
+    </style>
+    <style name="ServiceControlButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginHorizontal">12dp</item>
+        <item name="android:background">@drawable/circle_button</item>
+        <item name="android:tint">@color/circle_button_tint</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#121212</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#c5c5c5</color>
+
+    <!-- Circle button -->
+    <color name="circle_background_disabled">#A65A595B</color>
+    <color name="circle_background">#5a595b</color>
+    <color name="circle_text_disabled">#757575</color>
+
+
+    <!-- Status colors -->
+    <color name="active">#63af66</color>
+    <color name="paused">#ffdf81</color>
+    <color name="stopped">#f49992</color>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/backgroundCircle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="VisualLintBounds" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp">
+
+            <CheckBox
+                android:id="@+id/allowRecallCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/text_secondary"
+                android:textColor="@color/text_secondary"
+                android:text="@string/allow_repeated_calls" />
+
+            <ImageButton
+                android:id="@+id/repeatedCallsExplainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="8dp"
+                android:tint="@color/text_secondary"
+                android:src="@drawable/help"
+                android:contentDescription="@string/allow_repeated_calls"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rejectedCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:alpha=".8"
+                android:text="@string/calls_skipped" />
+
+            <TextView
+                android:id="@+id/serviceStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/protection_active"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pausedUntil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/text_secondary"
+                android:text="@string/on_pause_until"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:alpha=".8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="16dp">
+
+                <ImageButton
+                    style="@style/ServiceControlButton"
+                    android:id="@+id/startServiceButton"
+                    android:src="@drawable/play"
+                    android:contentDescription="@string/activate_protection" />
+
+                <ImageButton
+                    style="@style/ServiceControlButton"
+                    android:id="@+id/pauseServiceButton"
+                    android:src="@drawable/pause"
+                    android:contentDescription="@string/pause_protection" />
+
+                <ImageButton
+                    style="@style/ServiceControlButton"
+                    android:id="@+id/stopServiceButton"
+                    android:src="@drawable/stop"
+                    android:contentDescription="@string/stop_protection" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:id="@+id/bottomAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

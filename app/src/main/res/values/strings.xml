@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">No Unknown Call</string>
+    <string name="permissions_label">Permissions:</string>
+    <string name="permission_calls">Calls</string>
+    <string name="permission_contacts">Contacts</string>
+    <string name="permission_notifications">Notifications</string>
+    <string name="calls_skipped">%1$d calls skipped</string>
+    <string name="protection_active">Protection Active</string>
+    <string name="protection_paused">Protection Paused</string>
+    <string name="protection_stopped">Protection Disabled</string>
+    <string name="activate_protection">Activate protection</string>
+    <string name="pause_protection">Pause protection</string>
+    <string name="stop_protection">Stop protection</string>
+    <string name="allow_repeated_calls">Allow repeated calls</string>
+    <string name="on_pause_until">On pause until %1$s</string>
+    <string name="tomorrow">tomorrow</string>
+    <string name="give_permissions">Give Permissions</string>
+    <string name="two_hours">2 hours</string>
+    <string name="six_hours">6 hours</string>
+    <string name="until_tomorrow">Until tomorrow</string>
+    <string name="call_catch_text">Provide \"Catch Calls\" permission so the app can reject calls from unknown numbers!</string>
+    <string name="call_catch_button">Call rejection</string>
+    <string name="contacts_text">Provide \"Read Contacts\" permission so the app can determine whether the incoming call is uknown or not!</string>
+    <string name="contacts_button">Contacts reading</string>
+    <string name="notifications_text">Provide \"Notifications\" permission to see the protection status and quickly pause or stop it in any time!</string>
+    <string name="notifications_button">Notification creation</string>
+    <string name="repeated_calls_explain">Allow repeated calls from same unknown number within first 5 minutes after first rejection.</string>
+</resources>
